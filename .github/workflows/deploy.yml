@@ -13,8 +13,7 @@ jobs:
         uses: c-hive/gha-yarn-cache@v1
 
       - name: Install dependencies
-        with:
-         cmd:
+        run: |
           rm -rf yarn_lock.json
           rm -rf node_modules/
           yarn
